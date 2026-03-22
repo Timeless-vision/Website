@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Vision | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">3D<span>Vision</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="registration.html" class="active">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero section with background image -->
+    <section class="hero hero-register">
+        <div class="hero-content">
+            <h1>Registration</h1>
+            <p>Secure your spot in the next cohort</p>
+            <a href="#register-form" class="btn btn-primary">Start Registration</a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="register-form" class="registration-form reveal">
+        <div class="container">
+            <div class="form-card">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Select Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">-- Choose a course --</option>
+                            <option value="digital-marketing">Digital Marketing</option>
+                            <option value="forex-trading">Forex Trading</option>
+                            <option value="graphic-design">Graphic Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes (optional)</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
+                </form>
+                <div id="formFeedback" class="feedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 3D Vision. All rights reserved. | Designed with <i class="fas fa-heart"></i> for the future.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
